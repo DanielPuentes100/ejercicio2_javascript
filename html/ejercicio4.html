@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio4</title>
+</head>
+<body>
+    
+    <h2>Formulario de Registro de Empleados</h2>
+    
+   
+    <form onsubmit="addEmployee(event)">
+        <label for="codigo">Código del Empleado:</label>
+        <input type="text" id="codigo" required>
+        
+        <label for="nombre">Nombre del Empleado:</label>
+        <input type="text" id="nombre" required>
+        
+        <button type="button" onclick="addEmployee()">Agregar Empleado</button>
+    </form>
+
+  
+    <h3>Lista de Empleados</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTable">
+         
+        </tbody>
+    </table>
+
+    <script src="../js/ejercicio4.js"></script>
+
+
+</body>
+</html>
